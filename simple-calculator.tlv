@@ -18,13 +18,13 @@
    
    // uncomment and complete the rest of the arithmetic operations below
    //subtraction
-   $diff[7:0] =  $a[3:0] - $b[3:0];
+   //$diff[7:0] =  
    
    //multiplication
-   $prod[7:0] =  $a[3:0] * $b[3:0];
+   $prod[7:0] =  
    
    //division
-   $div[7:0] =  $a[3:0] / $b[3:0];
+   $div[7:0] = 
    
    // Assert these to end simulation (before Makerchip cycle limit).
    *passed = *cyc_cnt > 40;
