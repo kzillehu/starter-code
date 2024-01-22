@@ -21,7 +21,7 @@
    //$dif = ;
    
    //multiplication
-   //$pro = ;
+   //$prod = ;
    
    //division
    //$div = ;
