@@ -14,7 +14,7 @@
    $reset = *reset;
    
    // examples of simple arithmetic operations in TL-Verilog
-   $sum[3:0] = $a[3:0] + $b[3:0];
+   $sum[7:0] = $a[3:0] + $b[3:0];
    
    // uncomment and complete the rest of the arithmetic operations below
    //subtraction
