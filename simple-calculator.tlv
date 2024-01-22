@@ -11,20 +11,20 @@
    // stimulus support, and Verilator config.
    m5_makerchip_module   // (Expanded in Nav-TLV pane.)
 \TLV
-   $reset = *reset;
+   //$reset = *reset;
    
    // examples of simple arithmetic operations in TL-Verilog
    $sum[7:0] = $a[3:0] + $b[3:0];
    
    // uncomment and complete the rest of the arithmetic operations below
    //subtraction
-   //$dif = ;
+   $diff[7:0] =  $a[3:0] - $b[3:0];
    
    //multiplication
-   //$prod = ;
+   $prod[7:0] =  $a[3:0] * $b[3:0];
    
    //division
-   //$div = ;
+   $div[7:0] =  $a[3:0] / $b[3:0];
    
    // Assert these to end simulation (before Makerchip cycle limit).
    *passed = *cyc_cnt > 40;
