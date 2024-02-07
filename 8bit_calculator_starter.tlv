@@ -28,7 +28,7 @@
    $out[7:0] =
    	$reset ? 0 :
       $sel[1:0] == 3     //if select lines select data input 3 
-      ? $quot:    //$out is quotient of the division 
+      ? $div:    //$out is integer quotient of the division 
       $sel[1:0] == 2     //if select lines select data input 2 
       ? $prod:   //$out is product of the input a and b 
       $sel[1:0] == 1  //if select lines select data input 1 
