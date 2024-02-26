@@ -12,7 +12,7 @@
    // | Sum 1 to 9 Program |
    // \====================/
    //
-   // Program to test RV32I
+   // Program to test RV32I the RISC-V ISA
    // Add 1,2,3,...,9 (in that order).
    //
    // Regs:
