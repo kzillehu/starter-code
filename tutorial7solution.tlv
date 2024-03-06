@@ -46,8 +46,6 @@
    // we will add code here
    
    // (1) PC Logic 
-   // PC Logic should be complete by now
-   // Your PC logic can be entered here, or uncomment the PC logic below
    $pc[31:0] = >>1$reset ? 0 : >>1$pc + 4;
    
    // (2) IMem Logic
@@ -60,10 +58,6 @@
                  $instr[6:2] ==? 5'b001x0 ||
                  $instr[6:2] ==? 5'b11001 ;
    
-   // implement logic for the rest of the Instruction Formats as in Fig 3 above
-   // use the same name for the signal that decodes the instruction as the names given
-   //in the to be implemented message box
-   
    $is_u_instr = $instr[6:2] ==? 5'b0x101;
    
    $is_s_instr = $instr[6:2] ==? 5'b0100x;
@@ -73,8 +67,6 @@
    $is_j_instr = $instr[6:2] ==? 5'b11011;
    
    $is_r_instr = $instr[6:2] ==? 5'b01011 || $instr[6:2] ==? 5'b011x0 ||$instr[6:2] ==? 5'b10100;
-
-   
    
    // (4) RF Read - Read RF Logic
    
