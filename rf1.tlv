@@ -108,6 +108,10 @@
 
    
    // (4) RF Read - Read RF Logic
+   // is $rd valid and 0 
+   $is_rd_zero = $rd_valid ? 
+      $rd ==? 5'b0 ? 1 : 0 : 0;
+      
    // write enable for R-, I-, U- and J- type instructions and write register is not 0 
    // $wr_en = ($is_r_instr || ... ) && not write register is not 0;
    //$wr_en = ($is_r_type || ...
